@@ -1,0 +1,33 @@
+.animal-img{
+    .img-show{
+        margin-bottom: 10px !important;
+        margin-top: 10px !important;
+        // position: relative;
+        // height: 130px !important;
+        // width: 130px !important;
+        img{
+             height: 130px;
+             width: 100%;
+            // width: 130px !important;
+        }
+        .preview-img{
+            height: 130px;
+            width: 120px;
+            background-size: 120px auto;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .close{
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            position: absolute;
+            top: -10%;
+            left: 77%;
+            font-size: initial;
+            background-color: #da373b;
+            border-radius: 50%;
+            opacity: 1;
+        }
+    }
+}

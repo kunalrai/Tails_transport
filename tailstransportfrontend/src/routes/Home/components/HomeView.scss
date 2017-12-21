@@ -1,0 +1,227 @@
+section#home-wrap {
+	.page-content {
+		position: relative;
+		.container-fluid {
+			@media (max-width: 400px) {
+				padding: 0px;
+			}
+		}
+		.box-wrap {
+			position: relative;
+			top: -100px;
+			background: #fff;
+			box-shadow: 0px 0px 42px -8px rgba(0,0,0,0.75);
+			margin: 0px 15% auto;
+			z-index: 99999;
+			@media(max-width: 400px) {
+				margin: 0 auto;
+			}
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				li {
+					flex: 1;
+					padding: 20px;
+					display: flex;
+					flex-direction: column;
+					align-items: baseline;
+					justify-content: flex-start;
+					min-width: 300px;
+					p.step {
+						border-radius: 50%;
+						color: #fff;
+						width: 30px;
+						height: 30px;
+						text-align: center;
+						padding-top: 3px;
+					}
+					p.header {
+						font-size: 22px;
+						font-weight: 700;
+					}
+					p.sub-header {
+						font-size: 18px;
+						color: #a79e9b;
+					}
+					&:first-child {
+						border-top: 5px solid #0fcbf0;
+						p.step {
+							background-color: #0fcbf0;
+						}	
+						p.header {
+							color: #0fcbf0;
+						}
+					}
+					&:nth-child(2) {
+						border-top: 5px solid #ff7355;
+						border-left: 1px solid rgba(255, 115, 85, .25);
+						border-right: 1px solid rgba(255, 115, 85, .25);
+						p.step {
+							background-color: #ff7355;
+						}	
+						p.header {
+							color: #ff7355;
+						}
+					}
+					&:last-child {
+						border-top: 5px solid #e8d174;
+						p.step {
+							background-color: #e8d174;
+						}	
+						p.header {
+							color: #e8d174;
+						}
+					}
+				}
+			}
+		}
+		.big-text {
+			text-align: center;
+			position: relative;
+			@media(max-width: 800px) {
+				padding: 10px;
+			}
+			p.to-go {
+				font-size: 40px;
+				color: #67544c;
+				font-weight: 300;
+				span {
+					color: #ff6148;
+					font-weight: 700;
+				}
+			}
+			p.description {
+				max-width: 666px;
+				margin: auto;
+				color: #958783;
+				font-family: "PT Sans";
+				font-size: 20px;
+				font-weight: 400;
+				margin-bottom: 50px;
+			}
+			button.solid-button {
+				margin-bottom: 75px;
+				position: relative;
+				z-index: 999999;
+			}
+			img.hoof {
+				position: absolute;
+				@media(max-width: 800px) {
+					display: none;
+				}
+				&.left {
+					top: -200px;
+					left: 50px;
+				}
+				&.right {
+					top: 200px;
+					right: 50px;
+					transform: scaleX(-1);
+				}
+			}	
+		}
+		.trailer-wrap {
+			width: 100%;
+			position: relative;
+			padding: 0px 10px;
+			.circle-wrap {
+				max-width: 1000px;
+				position: relative;
+				z-index: 10;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.circle {
+					border-radius: 50%;
+					position: absolute;
+				}
+				.g1 {
+					max-width: 600px;
+					max-height: 600px;
+					width: 60vw;
+					height: 60vw;
+					opacity: 0.66;
+					background-color: #93edff;
+				}
+				.g2 {
+					max-width: 800px;
+					max-height: 800px;
+					width: 80vw;
+					height: 80vw;
+					opacity: 0.33;
+					background-color: #93edff;
+				}
+				.g3 {
+					max-width: 1000px;
+					max-height: 1000px;
+					width: 100vw;
+					height: 100vw;
+					opacity: 0.15;
+					background-color: #93edff;
+				}
+			}
+			img {
+				max-width: 100%;
+				position: relative;
+				z-index: 9999;
+				top: 15px;
+			}
+		}
+		.quarters-wrap {
+			position: relative;
+			z-index: 9999;
+			width: 100%;
+		    min-height: 500px;
+		    background-color: #fff;
+			.flex-row {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				flex-wrap: wrap;
+				.half {
+					flex: 1;
+					height: 500px;
+					@media(max-width: 800px) {
+						text-align: center;
+						&.hide-on-mobile {
+							display: none;
+						}
+					}
+					.more-info {
+						padding: 100px;
+						@media(max-width: 1150px) {
+							padding: 30px;
+						}
+						p.header {
+							color: #67544c;
+							font-size: 30px;
+							font-weight: 700;
+						}
+						p.desc {
+							color: #a79e9b;
+							font-family: "PT Sans";
+							font-size: 20px;
+							font-weight: 400;
+						}
+					}
+					&.img-right {
+						background-position: 1015px;
+						background-size: 2000px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

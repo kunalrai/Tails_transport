@@ -1,0 +1,84 @@
+$yellowBar: #f0db87;
+
+section#banner {
+	min-height: 800px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	video {
+		position: absolute;
+		min-height: 800px;
+		width: auto;
+		z-index: 1;
+		@media(min-width: 1400px){
+			width: 100%;
+		}
+	}
+	.vignette {
+		position: absolute;
+		min-height: 800px;
+		width: 100%;
+		background: linear-gradient(rgba(0, 0, 0, .6), rgba(0,0,0,.3), rgba(0,0,0,.5));
+		z-index: 2;
+	}
+	.container {
+		z-index: 3;
+		@media(max-width: 400px) {
+			padding: 0 !important;
+		}
+	}
+	.banner-content {
+		text-align: center;
+		margin-top: -100px;
+		@media (max-width: 800px) {
+			margin-top: 0px;
+			padding: 150px 10px;
+		}
+		p.title {
+			color: white;
+			font-size: 65px;
+			font-weight: 700;
+			text-align: center;	
+			margin-bottom: 50px;
+			@media(max-width: 800px) {
+				font-size: 40px;
+			}
+			span.little-italic {
+				font-weight: 200;
+				font-style: italic;
+			}
+		}
+		.yellow-bar {
+			width: 100px;
+			height: 9px;
+			background-color: $yellowBar;
+			margin: 0 auto;
+		}
+		p.motto {
+			opacity: 0.9;
+			color: white;
+			font-family: "PT Serif";
+			font-size: 26px;
+			font-weight: 400;
+			width: 50%;
+			min-width: 300px;
+			margin: 50px auto;
+			@media(max-width: 800px) {
+				font-size: 16px;
+			}
+		}
+		.button-wrap {
+			* {
+				margin: 0px 20px;
+				@media (max-width: 800px) {
+					margin: 20px;
+				}
+			}
+		}
+	}
+}

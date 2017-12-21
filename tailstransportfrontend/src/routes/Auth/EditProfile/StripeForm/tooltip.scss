@@ -1,0 +1,59 @@
+div.tooltips {
+    position: relative;
+    display: inline;
+  }
+  div.tooltips span {
+    position: absolute;
+    width:140px;
+    color: #000000;
+    background: #FFFFFF;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #000000;
+  }
+  div.tooltips span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -8px;
+    width: 0; height: 0;
+    border-right: 8px solid #FFFFFF;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+   
+  }
+  div:hover.tooltips span {
+    visibility: visible;
+    opacity: 1;
+    left: 100%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 15px;
+    z-index: 999;
+  }
+/***************************************************************************************/
+
+[class*='close-'] {
+    color: #777;
+    font: 14px/100% arial, sans-serif;
+    position: absolute;
+    right: 5px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    top: 5px;
+  }
+
+  .close-thin:after {
+    content: '×'; /* UTF-8 symbol */
+   
+  }
+  .close-thin{
+    border: none;
+    padding: 0;
+    background: none;
+  }
+
